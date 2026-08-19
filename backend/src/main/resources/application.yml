@@ -1,0 +1,12 @@
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: ${API_CONTEXT_PATH:/api}
+spring:
+okta:
+  domain: ${OKTA_DOMAIN:}
+  api-token: ${OKTA_API_TOKEN:}
+  client-id: ${OKTA_CLIENT_ID:}
+  client-secret: ${OKTA_CLIENT_SECRET:}
+frontend:
+  origin: ${FRONTEND_ORIGIN:http://localhost:5173}
